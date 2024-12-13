@@ -9,7 +9,7 @@ const DATABASE_URL =
   process.env.DATABASE_URL === undefined ? databasePath : process.env.DATABASE_URL
 module.exports = {
   VERSION: require('./package.json').version,
-  SESSION_ID: (process.env.SESSION_ID || 'levanter_135028fda963dc4312aae893daa0672cde').trim(),
+  SESSION_ID: (process.env.SESSION_ID || 'levanter_1433f183877634480abc6a5c380784e0e7').trim(),
   DATABASE:
     DATABASE_URL === databasePath
       ? new Sequelize({
